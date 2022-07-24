@@ -1,0 +1,199 @@
+h1, h2, h4, h3, p {
+    color: rgb(238, 238, 238);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*HEADER*/
+.header-container {
+    text-align: center;
+    margin-top: 10vw;
+    margin-bottom: -2vw;
+}
+@media screen and (max-width: 900px){
+    .header-container{
+        margin-top: 120px;
+        margin-bottom: -20px;
+    }
+}
+
+.header-container h2, h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: lighter;
+}
+
+.header-container h2, h3 {
+    font-size: 3vw;
+}
+@media screen and (max-width: 600px){
+    .tytul h1{
+        font-size: 60px;
+    }
+    .header-container h2, h3{
+        font-size: 18px;
+    }
+    .header-container h3{
+        margin-top: 15px;
+    }
+}
+
+.header-container .tytul {
+    font-size: 3vw;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* Galeria */
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-top: 6.5vw;
+    animation: fadein 1s;
+    align-content: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 1000px){
+    .gallery{
+        margin-top: 60px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: block;
+    transition: 0.5s;
+    border: 1px solid transparent;
+    border-radius: 0 20px 0 20px;
+}
+.img-container{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+.img-container a{
+    width: 100%;
+    height: 100%;
+}
+.img-container:hover > a img{
+    opacity: 0.2;
+}
+
+/*OVERLAY*/
+
+.overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.overlay{
+    top: 50px;
+    bottom: 50px;
+    right: 50px;
+    left: 50px;
+    position: absolute;
+    background-color: rgba(12, 11, 11, 0.404);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.overlay h2{
+    color: rgb(238, 238, 238);
+    top: 40%;
+    left: 50%;
+    display: none;
+    position: absolute;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+}
+
+/* Overlay tylko dla MainPage podstron Malarstwo i Grafiki */
+
+.overlay-index:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.overlay-index{
+  bottom: 0;
+  top: 0; /* Dla poprzednich ustawień:  b,t,r,l : 60px; */
+  right: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0; /* Dla poprzednich ustawień: opacity: 0; */
+  transition: 0.5s ease;
+}
+
+.overlay-index h2{
+    top: 40%;
+    left: 50%;
+    color: rgb(238, 238, 238);
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 1000px){
+    .overlay h2{
+        font-size: 30px;
+    }
+    .overlay-index h2{
+        font-size: 18px;
+    }
+}
+
+.gallery a{
+    cursor: default;
+}
+
+.goback-aa .gobackBtn i{
+    color: transparent;
+}
+/* .archiwum{
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    margin-top: 6vh;
+    margin-bottom: 13.5vh;
+    text-align: center;
+}
+
+
+.archiwum .button{
+    background-color: #1d1d1d;
+    min-width: 20vh;
+    color: rgb(219, 217, 217);
+    font-family: 'Crete Round', serif;
+    padding: 2vh;
+    transition-duration: 0.3s;
+    border: transparent solid 0px;
+    border-radius: 9999px;
+}
+
+.archiwum .button:hover{
+    color: #1d1d1d;
+    background-color: rgb(219, 217, 217);
+    cursor: pointer;
+} */

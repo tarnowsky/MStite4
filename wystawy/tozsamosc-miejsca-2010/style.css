@@ -1,0 +1,160 @@
+/*PHOTO*/
+.promo_photo-container{
+    justify-content: center;
+    display: flex;
+    margin-top: 9vw;
+}
+@media screen and (max-width: 900px){
+    .promo_photo-container{
+        margin-top: 80px;
+    }
+}
+.img{
+    width: 45%;
+    display: flex;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 450px){
+    .img{
+        max-height: 250px;
+        width: 90%;
+    }
+}
+.img img{
+    width: 100%;
+    border-radius: 0 20px 0 20px;
+}
+
+/* CREDO */
+.quotes-long {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  background-color: #1d1d1d;
+  margin-bottom: 10vh;
+  flex-direction: column;
+}
+
+.quotes-content-all {
+  justify-content: space-around;
+  width: 100%;
+  display: flex;
+}
+
+.quotes-content-elementq{
+  width: 40%;
+  text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
+  margin-bottom: 10vh;
+}
+.quotes-content-elementq p{
+  font-size: 1.5vw;
+}
+
+.quotes-content-elementq h3 {
+  margin-bottom: 2vh;
+  font-size: 2vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .quotes-content-all {
+    justify-content: center;
+    display: block;
+  }
+  .quotes-content-elementq {
+    width: 70%;
+  }
+  .quotes-content-elementq p{
+    font-size: 16px;
+  }
+  
+  .quotes-content-elementq h3 {
+    margin-bottom: 2vh;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.header-container .podtytul{
+    width: 60%;    
+    margin-left: auto;
+    margin-right: auto;
+}
+  .header-container{
+    width: 70%;
+}
+
+.header-container .podtytul h2{
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .quote-content {
+    width: 70%;
+  }
+  .header-container .podtytul{
+      width: 100%;
+  }
+}
+@media screen and (max-width: 900px){
+    .header-container .podtytul h3{
+        display: none;
+    }
+}
+.zobacztez{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.zobacztez h2{
+  margin-bottom: 15px;
+}
+.zobacztez ul{
+  list-style: none;
+  margin-bottom: 30px;
+}
+.zobacztez ul li{
+  margin: 5px;
+  display: inline-block;
+}
+.zobacztez ul li a{
+  text-decoration: none;
+  color: black;
+  background-color: #eee;
+  border-radius: 999px;
+  border: transparent 1px solid;
+  transition: 0.3s;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.zobacztez ul li a:hover{
+  color: #eee;
+  background-color: black;
+}
+.gallery{
+    margin-bottom: 50px;
+}
+.patronat-container .patronaci .bip{
+  width: clamp(50px, 10%, 100px);
+}
+.patronat-container .patronaci .gdansk{
+  width: clamp(50px, 15%, 150px);
+}
+@media screen and (max-width: 700px){
+  .patronat-container .patronaci .bip{
+    width: clamp(100px, 10%, 200px);
+  }
+  .patronat-container .patronaci .gdansk{
+    width: clamp(100px, 15%, 150px);
+  }
+}
+.patronat-container .patronaci .ggm{
+    width: 100px;
+}

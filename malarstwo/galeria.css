@@ -1,0 +1,154 @@
+h1, h2, h4, h3, p {
+    color: rgb(238, 238, 238);
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+/*HEADER*/
+.header-container {
+    text-align: center;
+    margin-top: 10vw;
+    margin-bottom: -4vw;
+  }
+  @media screen and (max-width: 900px){
+    .header-container{
+      margin-top: 120px;
+      margin-bottom: -20px;
+    }
+  }
+  
+  .header-container h2, h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: lighter;
+  }
+  
+  .header-container h2, h3 {
+    font-size: 3vw;
+  }
+  @media screen and (max-width: 600px){
+    .tytul h1{
+      font-size: 60px;
+    }
+    .header-container h2, h3{
+      font-size: 18px;
+    }
+    .header-container h3{
+      margin-top: 15px;
+    }
+  }
+  
+  .header-container .tytul {
+    font-size: 3vw;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /*GALLERY*/
+
+.gallery{
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    margin-top: 6.5vw;
+    animation: fadein 1s;
+    align-content: center;
+    justify-content: center;
+}
+@media screen and (max-width: 1000px){
+    .gallery{
+        margin-top: 60px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.gallery img{
+    width: 100%;
+    padding: 50px;
+    z-index: 1;
+    display: block;
+}
+.img-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/*OVERLAY*/
+
+.overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.overlay{
+    top: 50px;
+    bottom: 50px;
+    right: 50px;
+    left: 50px;
+    position: absolute;
+    background-color: rgba(12, 11, 11, 0.404);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.overlay h2{
+    color: rgb(238, 238, 238);
+    top: 40%;
+    left: 50%;
+    display: none;
+    position: absolute;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+}
+
+/* Overlay tylko dla MainPage podstron Malarstwo i Grafiki */
+
+.overlay-index:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.overlay-index{
+  bottom: 50px;
+  top: 50px; /* Dla poprzednich ustawień:  b,t,r,l : 60px; */
+  right: 50px;
+  left: 50px;
+  position: absolute;
+  background-color: rgba(12, 11, 11, 0.705);
+  opacity: 0; /* Dla poprzednich ustawień: opacity: 0; */
+  transition: 0.5s ease;
+}
+
+.overlay-index h2{
+    top: 40%;
+    left: 50%;
+    color: rgb(238, 238, 238);
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 1000px){
+    .overlay h2{
+        font-size: 30px;
+    }
+    .overlay-index h2{
+        font-size: 30px;
+    }
+}
+
+.gallery a{
+    cursor: default;
+}

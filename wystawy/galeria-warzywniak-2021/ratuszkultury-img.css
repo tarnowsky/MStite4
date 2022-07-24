@@ -1,0 +1,26 @@
+/*PHOTO*/
+.promo_photo-container{
+    justify-content: center;
+    display: flex;
+    margin-top: 9vw;    
+}
+@media screen and (max-width: 900px){
+    .promo_photo-container{
+        margin-top: 80px;
+    }
+}
+.img{
+    width: 50%;
+    display: flex;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 450px){
+    .img{
+        width: 90%;
+        max-height: 200px;
+    }
+}
+.img img{
+    width: 100%;
+    border-radius: 0 20px 0 20px;
+}
